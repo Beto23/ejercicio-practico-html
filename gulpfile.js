@@ -14,7 +14,11 @@ var config = {
   styles:{
     main: './src/styles/main.styl',
     watch: './src/styles/**/*.styl',
-    output: './build/css'
+    output: './build/css',
+    fonts:{
+      main: './src/fonts/*',
+      output: './build/fonts/'
+    }
   },
   html: {
 		main: './src/index.html',
@@ -28,7 +32,7 @@ var config = {
 	},
   images: {
 		main: ['./src/img/**/*.jpg','./src/img/**/*.png'],
-		output: './dist/img',
+		output: './build/img',
 		watch: ['./src/img/**/*.jpg','./src/img/**/*.png']
 	},
 };
@@ -51,6 +55,12 @@ gulp.task('server', function(){
  		.pipe(minifyCSS())
  		.pipe(gulp.dest(config.styles.output));
  });
+
+ gulp.task('fonts', function(){
+	return gulp
+		.src(config.styles.fonts.main)
+		.pipe(gulp.dest(config.styles.fonts.output));
+});
 
  gulp.task('html', function(){
 	return gulp
@@ -85,6 +95,6 @@ gulp.task('js', function(){
 	gulp.watch(config.styles.watch, ['css']);
 });
 
-gulp.task('build', ['css', 'html', 'js', 'img']);
+gulp.task('build', ['css', 'html', 'js', 'img', 'fonts']);
 
 gulp.task('default', ['server', 'watch' ,'build']);
