@@ -8,6 +8,7 @@ var source = require ('vinyl-source-stream');
 var buffer = require ('vinyl-buffer');
 var uglify = require ('gulp-uglify');
 var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 var config = {
   styles:{
