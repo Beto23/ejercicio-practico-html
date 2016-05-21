@@ -16,6 +16,7 @@
     "nib": "^1.1.0"
   },
   "devDependencies": {
+    "bootstrap": "^3.3.6",
     "browserify": "^13.0.1",
     "flexboxgrid": "^6.3.0",
     "gulp-imagemin": "^3.0.1",

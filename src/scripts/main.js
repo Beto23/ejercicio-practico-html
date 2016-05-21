@@ -1,5 +1,6 @@
 console.log('prueba');
 window.$ = window.jQuery = require('jquery');
+require('bootstrap');
 
 var hwindow = $(window).height();
 $('.full-windows').css({
@@ -21,6 +22,9 @@ $(window).scroll(function(){
     menu_icon.removeClass('show-items');
     var tamañoHeader = $('header').height();
     $('.historia').css({
+      height: (hwindow - tamañoHeader)
+    });
+    $('.vinicolas').css({
       height: (hwindow - tamañoHeader)
     });
   }else {
