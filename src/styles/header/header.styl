@@ -19,6 +19,15 @@ header
         transition: color .5s ease
       li:hover
         color: #8ab01f
+  .menu
+    width: 3em
+    height: 3em
+    border-radius: 100%
+    background: #8ab01f
+    cursor: pointer
+    i
+      font-size: 2em
+      color: white
   .header-nav
     padding: 2em 4em
     figure
@@ -27,6 +36,7 @@ header
       background-repeat: no-repeat;
     .nav-opciones-icons
       font-size: 3em
+      transition all 0.3s ease
       li
         cursor pointer
         color #575757;
@@ -52,3 +62,12 @@ header
         bottom: -18px;
         right: 16px;
         color #4d2865
+
+.show-items
+  height: 0 !important
+  overflow: hidden
+  transition all 0.3s ease
+  list-style none
+.padding-min
+  padding: 0 4em !important
+  transition all 0.3s ease
