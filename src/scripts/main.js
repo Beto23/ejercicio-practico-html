@@ -22,7 +22,7 @@ $(window).scroll(function(){
     menu_icon.removeClass('show-items');
     var tamañoHeader = $('header').height();
     $('.seccion').css({
-      height: (hwindow - tamañoHeader)
+      height: (hwindow)
     });
   }else {
     opcionesNav.removeClass('show-items');

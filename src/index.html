@@ -7,20 +7,30 @@
   <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
 </head>
-<body>
-  <header>
+<body data-spy="scroll" data-target=".header">
+  <header class="header">
     <div>
       <ul>
         <li>Productos típicos</li>
-        <li>Calendario</li>
-        <li>Contacto</li>
+        <a href="#calendario">
+          <li>Calendario</li>
+        </a>
+        <a href="#contacto">
+          <li>Contacto</li>
+        </a>
       </ul>
     </div>
     <nav class="header-nav row middle-xs margen" id="nav" >
-      <figure class="col-md"></figure>
+      <a href="#" class="col-md">
+        <figure></figure>
+      </a>
       <ul class="row middle-xs nav-opciones-icons col-md around-xs margen" id="nav-opciones">
-        <li id="historia" section="HISTORIA"><i class="icon-historia"></i></li>
-        <li id="vinicolas" section="VINÍCOLAS"><i class="icon-vinedos"></i></li>
+        <a href="#historia">
+          <li section="HISTORIA"><i class="icon-historia"></i></li>
+        </a>
+        <a href="#vinicolas">
+          <li section="VINÍCOLAS"><i class="icon-vinedos"></i></li>
+        </a>
         <li id="atractivos" section="ATRACTIVOS"><i class="icon-atractivos"></i></li>
         <li id="gastronomia" section="GASTRONOMIA"><i class="icon-restaurantes"></i></li>
         <li id="hoteles" section="HOTELES"><i class="icon-hoteles"></i></li>
@@ -33,7 +43,7 @@
   <section class="home full-windows">
 
   </section>
-  <section class="historia  row middle-xs margen seccion be-black-gray">
+  <section class="historia seccion  row middle-xs margen be-black-gray" id="historia">
     <div class="historia-container">
       <h2>Parras de la fuente</h2>
       <div class="border-historia"></div>
@@ -42,8 +52,7 @@
       <p>Cuna del vino en América, su producción de vinos, aguardientes y licores diversos son conocidos a nivel mundial, al igual que su gran industria textil especializada en la producción de mezclilla considerada de la mas alta calidad. Disfrutar de sus viñedos y huertas de nogales, sus callejones, su historia y sus tradiciones sin duda harán de tu visita una experiencia inolvidable.</p>
     </div>
   </section>
-
-  <section class="vinicolas seccion">
+  <section class="vinicolas seccion" id="vinicolas">
     <div class="vinicolas-container">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -115,7 +124,7 @@
     </div>
 
   </section>
-  <section class="calendario seccion be-black-gray">
+  <section class="calendario seccion be-black-gray" id="calendario">
     <div class="calendario-container">
       <h3>Calendario</h3>
       <div class="meses row center-xs">
@@ -126,7 +135,7 @@
     </div>
   </section>
 
-  <section class="contacto be-black">
+  <section class="contacto be-black" id="contacto">
     <div class="contacto-container">
       <div class="contacto-container-info">
         <div class="contacto-container-info-uno">
@@ -163,7 +172,7 @@
       </a>
       <a href="">
         <img src="img/mexicoLogo.png" alt="">
-      </a>      
+      </a>
     </div>
   </footer>
   <script src="./js/bundle.js"></script>
