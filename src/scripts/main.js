@@ -21,10 +21,7 @@ $(window).scroll(function(){
     nav.addClass('padding-min');
     menu_icon.removeClass('show-items');
     var tamañoHeader = $('header').height();
-    $('.historia').css({
-      height: (hwindow - tamañoHeader)
-    });
-    $('.vinicolas').css({
+    $('.seccion').css({
       height: (hwindow - tamañoHeader)
     });
   }else {
