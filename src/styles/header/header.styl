@@ -30,9 +30,14 @@ header
       font-size: 2em
       color: white
   .header-nav
-    padding: 2em 4em
-    figure
+    padding: 2em 1em
+  .header-nav, .nav-opciones-icons
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    .logo
       height: 4em;
+      width: 22em
       background-image: url(../img/parras-logotipo.png);
       background-repeat: no-repeat;
     .nav-opciones-icons
@@ -68,9 +73,10 @@ header
 
 .show-items
   height: 0 !important
+  width: 0
   overflow: hidden
   transition all 0.3s ease
   list-style none
 .padding-min
-  padding: 0 4em !important
+  padding: 0 1em !important
   transition all 0.3s ease

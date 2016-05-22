@@ -7,9 +7,6 @@ $('.full-windows').css({
   height: hwindow
 });
 
-if (window.scrollY == 0) {
-    $('#nav-opciones').addClass('.show-items');
-}
 var opcionesNav = $('body').find('#nav-opciones');
 var nav = $('nav');
 var menu_icon = $('#menu-icon');
