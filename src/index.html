@@ -153,18 +153,18 @@
         </div>
         <p class="color-green">Escríbenos a: <a href="direccion@ocvparras.com">direccion@ocvparras.com</a> o llena el siguiente formulario y nos pondremos en contacto contigo.</p>
       </div>
-      <form class="formulario">
+      <form class="formulario" name="frmContacto" action="./sendbymail.php"  method="post">
         <div class="campo">
-          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Nombre" name="nombre" required>
         </div>
         <div class="campo2">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Teléfono">
+          <input type="email" placeholder="Email" name="correo" required>
+          <input type="text" placeholder="Teléfono" name="telefono">
         </div>
         <div class="campo">
-          <textarea name="name" placeholder="Mensaje"></textarea>
+          <textarea placeholder="Mensaje" name="mensaje" required></textarea>
         </div>
-        <button type="submit" name="button">ENVIAR</button>
+        <button type="submit" name="enviar">ENVIAR</button>
       </form>
       <p class="derechos">©2016. Todos los derechos reservados</p>
     </div>
