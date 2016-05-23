@@ -4,7 +4,7 @@ header
   right: 0
   left 0
   z-index: 1000
-  div
+  .header-opciones
     background: white
     ul
       display: flex;
@@ -80,3 +80,38 @@ header
 .padding-min
   padding: 0 1em !important
   transition all 0.3s ease
+.on-menu
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: white none repeat scroll 0% 0%;
+  display: flex !important
+  flex-wrap: wrap;
+  a
+    display: flex;
+    justify-content: center;
+  li
+    position: relative;
+    color #4d2865 !important
+  li::before
+    content: attr(section);
+    font-size: .3em
+    position: absolute;
+    bottom: -13px;
+    color: grey;
+.menu-barraOn
+  position: fixed;
+  top: 10px;
+  right: 38px;
+
+//media query
+
+@media (max-width:847px)
+  header
+    .nav-opciones-icons
+      display: none
+    .menu
+      height: 3em
+      width: 3em
